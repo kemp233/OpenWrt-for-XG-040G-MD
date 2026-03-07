@@ -16,6 +16,16 @@ OpenWrt firmware for NOKIA BELL XG-040G-MD
 - **网络与安全**: 防火墙 (基于 nftables), dnsmasq (DHCP/DNS/IPv6)
 - **科学上网**: HomeProxy, PassWall (含 xray-core)
 
+## 刷机教程
+
+1. **刷入 U-Boot**: [点击参考通用的 XG-040G-MD 刷机教程](https://nwrt.kuroneko.host/flashdocs/XG-040G-MD.html)
+2. **刷入系统**: 在 U-Boot Web 恢复界面中，上传并刷入本仓库 Release 页面发布的 **factory** 固件。
+
+> [!WARNING]
+> **进入 U-Boot 的正确方法：**
+> 给路由器通电等 **3秒钟** 后，再按住 reset 键不放。
+> **千万不要**按住 reset 键再通电，否则机器会进入底层的“救砖模式”（MaskROM/Emergency 模式），将无法进入 U-Boot Web 界面。
+
 ## 运行截图
 
 ### 系统概览
